@@ -7,9 +7,10 @@ a = 10
 b = 20
 d = 15
 c = a * b 
-e = c + d
+e = a + d
 print (c)
 print (e)
+print ("Trialing")
 
 PunakhaT = 15
 ThimphuT = 10
