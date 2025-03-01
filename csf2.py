@@ -5,8 +5,11 @@ print (condition)
 
 a = 10
 b = 20
+d = 15
 c = a * b 
+e = c + d
 print (c)
+print (e)
 
 PunakhaT = 15
 ThimphuT = 10
