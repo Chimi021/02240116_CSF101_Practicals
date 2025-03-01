@@ -10,7 +10,7 @@ c = a * b
 e = a + d
 print (c)
 print (e)
-print ("Trialing")
+
 
 PunakhaT = 15
 ThimphuT = 10
