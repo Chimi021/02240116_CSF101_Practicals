@@ -7,9 +7,7 @@ a = 10
 b = 20
 d = 15
 c = a * b 
-e = a + d
 print (c)
-print (e)
 
 
 PunakhaT = 15
