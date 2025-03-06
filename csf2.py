@@ -40,9 +40,9 @@ else:
 
 
 name = ("chhimi")
-condition = True
+True_or_False = True
 print ( "My name is " + name )
-print (condition)
+print (True_or_False)
 
 a = 10
 b = 20
