@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Temperature"/>
+        <attribute name="authors" value="Tshomo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-23 12:36:47 AM"/>
+        <attribute name="created" value="VHNob21vO0RFU0tUT1AtMUE2T1RCSTsyMDI1LTA1LTE1OzEyOjI0OjA1IEFNOzI5NTA="/>
+        <attribute name="edited" value="VHNob21vO0RFU0tUT1AtMUE2T1RCSTsyMDI1LTA1LTIzOzEyOjM2OjQ3IEFNOzU7MzA3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="HT, LT, A, Farenheit, diff" type="Integer" array="False" size=""/>
+            <output expression="&quot;Heighest temperature (in degree celsius):&quot;" newline="True"/>
+            <input variable="HT"/>
+            <if expression="(HT &gt; 50) or (HT &lt; -50 )">
+                <then>
+                    <output expression="&quot;Invalid Temperature.. Temperature cannot be smaller then -50 or greater then 50&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Lowest temperature(in degree celsius) :&quot;" newline="True"/>
+            <input variable="LT"/>
+            <if expression="(LT &gt; 50) or (LT &lt; -50 )">
+                <then>
+                    <output expression="&quot;Invalid Temperature.. Temperature cannot be smaller then -50 or greater then 50&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="A" expression="(LT+HT)/2"/>
+            <output expression="&quot;The average temperature in degree celsius is &quot;&amp; (LT+HT)/2" newline="True"/>
+            <assign variable="Farenheit" expression="A*33.8"/>
+            <output expression="&quot;The average Temperature in Farenheit is &quot; &amp; Farenheit" newline="True"/>
+            <assign variable="diff" expression="HT - LT"/>
+            <if expression="diff &lt; 10">
+                <then>
+                    <output expression="&quot;Stable&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="diff &gt; 20">
+                        <then>
+                            <output expression="&quot;Moderate&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="diff &gt; 20">
+                                <then>
+                                    <output expression="&quot;Volatile&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="basics" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>
